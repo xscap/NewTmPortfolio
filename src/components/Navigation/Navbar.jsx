@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   const centerLinks = [
-    { label: "Work", path: "#work" },
     { label: "About", path: "#about" },
+    { label: "Work", path: "#work" },
     { label: "Contact Me", path: "#contact" },
   ];
 
@@ -39,8 +39,15 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Left Side (can hold logo or name) */}
       <div className="navbar-left">
-        <a href="/" className={isActive("/") ? "nav-link active" : "nav-link"}>Arnab</a>
+        <a href="/" className="mother-nav-link">Arnab</a>
       </div>
+
+      <input type="checkbox" id="checkbox" className="nav-checkbox" />
+      <label htmlFor="checkbox" className="toggle" aria-label="Toggle navigation menu">
+        <div className="bars" id="bar1"></div>
+        <div className="bars" id="bar2"></div>
+        <div className="bars" id="bar3"></div>
+      </label>
 
       {/* Center - primary navigation */}
       <div className="navbar-center">
@@ -51,11 +58,23 @@ const Navbar = () => {
             className={isActive(it.path) ? "nav-link active" : "nav-link"}
             onClick={() => {
               if (it.path.startsWith("#")) setActiveKey(it.path);
+              const checkbox = document.getElementById("checkbox");
+              if (checkbox) checkbox.checked = false;
             }}
           >
             {it.label}
           </a>
         ))}
+        <button
+          className="resume-btn mobile-resume-btn"
+          onClick={() => {
+            handleResumeDownload();
+            const checkbox = document.getElementById("checkbox");
+            if (checkbox) checkbox.checked = false;
+          }}
+        >
+          Resume
+        </button>
       </div>
 
       {/* Right Side */}
