@@ -1,7 +1,7 @@
 import React from "react";
 import "./herosection.css";
 import { heroData } from "../../../../assets/data";
-import { MapPin, Download, Send, ArrowRight, AlignCenter } from "lucide-react";
+import { MapPin, Download, Send, ArrowRight, } from "lucide-react";
 
 // OPTIONAL IF USING IMPORT METHOD
 // import profileImg from "../../../../assets/image(5).png";
