@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css"
 const Navbar = () => {
   const handleResumeDownload = () => {
@@ -9,10 +10,11 @@ const Navbar = () => {
     link.click();
   };
 
+  // Use route paths (requires your app to be wrapped in a <BrowserRouter>)
   const centerLinks = [
-    { label: "About", path: "#about" },
-    { label: "Work", path: "#work" },
-    { label: "Contact Me", path: "#contact" },
+    { label: "About", path: "/about" },
+    { label: "Work", path: "/work" },
+    { label: "Contact Me", path: "/contact" },
   ];
 
   const [activeKey, setActiveKey] = useState(() => window.location.hash || window.location.pathname || "/");
@@ -30,6 +32,7 @@ const Navbar = () => {
 
   function isActive(path) {
     if (!path) return false;
+    // keep fallback for non-router links
     if (path.startsWith("#")) return activeKey === path;
     if (path === "/") return activeKey === "/" || activeKey === "";
     return activeKey === path;
@@ -52,18 +55,19 @@ const Navbar = () => {
       {/* Center - primary navigation */}
       <div className="navbar-center">
         {centerLinks.map((it) => (
-          <a
+          <NavLink
             key={it.path}
-            href={it.path}
-            className={isActive(it.path) ? "nav-link active" : "nav-link"}
+            to={it.path}
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
             onClick={() => {
-              if (it.path.startsWith("#")) setActiveKey(it.path);
+              // update activeKey for any non-router consumers and close mobile menu
+              setActiveKey(it.path);
               const checkbox = document.getElementById("checkbox");
               if (checkbox) checkbox.checked = false;
             }}
           >
             {it.label}
-          </a>
+          </NavLink>
         ))}
         <button
           className="resume-btn mobile-resume-btn"
