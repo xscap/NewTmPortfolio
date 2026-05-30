@@ -7,7 +7,7 @@ const HeroAbout = () => {
     <section className="about-section" id="about-cards">
       <div className="about-section-inner">
         <div className="about-section-header">
-          <span className="about-label">About Me</span>
+          
           <h2>My Story &amp; Skills</h2>
           <p>
             I create modern frontend experiences with React, JavaScript and
