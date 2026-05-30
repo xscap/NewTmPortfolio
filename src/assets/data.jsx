@@ -1,3 +1,4 @@
+//These are mainly data sections works as a json
 import heroImg from './heroimg.jpg';
 import { FaUser,FaCode,FaRocket, FaHeart } from 'react-icons/fa';
 export const heroData = [
