@@ -2,6 +2,7 @@ import React from "react";
 import "./herosection.css";
 import { heroData } from "../../../../assets/data";
 import { MapPin, Download, Send, ArrowRight, } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // OPTIONAL IF USING IMPORT METHOD
 // import profileImg from "../../../../assets/image(5).png";
@@ -25,17 +26,17 @@ const HeroSectionViewer = () => {
 
         {/* BUTTONS */}
         <div className="hero-buttons">
-          <button className="primary-btn">
+          <Link to="/work" className="primary-btn">
             View My Work <ArrowRight size={18} />
-          </button>
+          </Link>
 
           <button className="secondary-btn">
             Download Resume <Download size={18} />
           </button>
 
-          <button className="secondary-btn">
+          <Link to="/contact" className="secondary-btn">
             Contact Me <Send size={18} />
-          </button>
+          </Link>
         </div>
       </div>
 
