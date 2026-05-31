@@ -1,0 +1,163 @@
+.contact-section {
+  /* padding: 80px 20px; */
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background: linear-gradient(
+    135deg,
+    rgba(13, 20, 38, 0.95),
+    rgba(8, 15, 28, 0.95)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  
+
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact-heading {
+  min-width: 250px;
+}
+
+.contact-heading h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.contact-heading p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.contact-card {
+  flex: 1;
+
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 18px;
+
+  text-decoration: none;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(99, 102, 241, 0.4);
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.icon-wrapper {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(99, 102, 241, 0.15);
+
+  color: #818cf8;
+}
+
+.contact-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.contact-card span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.resume-btn-contact{
+  min-width: 180px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .contact-heading {
+    grid-column: 1 / -1;
+  }
+
+  .contact-card,
+  .resume-btn {
+    width: 100%;
+  }
+
+  .resume-btn {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-heading {
+    width: 100%;
+  }
+
+  .contact-card,
+  .resume-btn {
+    width: 100%;
+  }
+
+  .resume-btn {
+    height: 60px;
+  }
+}

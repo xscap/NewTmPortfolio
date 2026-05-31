@@ -74,7 +74,7 @@
 }
 
 .mobile-resume-btn {
-  display: none;
+  display: none !important;
   background-color: #7c4dff;
 }
 
@@ -162,7 +162,7 @@
   }
 
   .mobile-resume-btn {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .navbar-right .resume-btn {
     display: none;
