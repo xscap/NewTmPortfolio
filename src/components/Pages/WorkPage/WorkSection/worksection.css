@@ -61,6 +61,139 @@
   font-weight: 600;
 }
 
+/* Present Status / Dashboard layout */
+.present-status {
+  padding: 32px 20px 36px;
+  background: rgba(10, 15, 30, 0.95);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.present-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: 0 16px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects-card img {
+  max-width: 1024px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Make project items slightly larger and distinct */
+.project-card {
+  padding: 20px;
+  border-radius: 14px;
+}
+
+/* Beyond code layout adjust */
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 1120px) {
+  .present-grid {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  .present-grid {
+    gap: 14px;
+  }
+
+  .present-status {
+    padding: 12px 0 24px;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
+}
+
+/* Generic panel used for left-column cards */
+.panel {
+  background: rgba(10,15,30,0.9);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 18px;
+  color: #e6eef8;
+}
+
+.panel-heading h3 {
+  margin: 0 0 12px 0;
+  color: #e6eef8;
+}
+
+.panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.panel-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #cbd5e1;
+}
+
+.panel-item .dot {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg,#6366f1,#8b5cf6);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.muted { color: #9fb0c9; }
+
+/* Projects */
+.projects-card { background: transparent; }
+.projects-list { display: flex; flex-direction: column; gap: 14px; }
+.project-card { display: flex; gap: 14px; align-items: center; background: rgba(8,10,20,0.45); border: 1px solid rgba(255,255,255,0.03); border-radius: 12px; padding: 14px; }
+.project-media { width: 120px; height: 80px; display:flex; align-items:center; justify-content:center; background: rgba(255,255,255,0.03); border-radius: 8px; }
+.project-thumb { color: #9fb0c9; font-size: 0.9rem; }
+.project-body h4 { margin: 0 0 6px 0; }
+.tag-row { margin-top: 8px; display:flex; gap:8px; flex-wrap:wrap; }
+.tag { background: rgba(99,102,241,0.12); color: #c7d2fe; padding:6px 8px; border-radius:8px; font-size: 0.78rem; }
+
+/* Timeline */
+.timeline { display:flex; flex-direction:column; gap:12px; }
+.timeline-item { display:flex; gap:12px; align-items:flex-start; }
+.timeline-left { min-width: 140px; }
+.timeline-right { flex:1; }
+.small { font-size:0.9rem }
+
+/* Beyond code cards */
+.beyond-card { background: rgba(15,23,42,0.7); padding: 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03); }
+.beyond-title { font-weight:700; margin-bottom:6px; }
+
+
 @media (max-width: 800px) {
   .techstack-section {
     padding: 28px 16px;

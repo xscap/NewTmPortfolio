@@ -116,3 +116,65 @@ export const TechStackData = [
   }
 
 ];
+
+export const currentlyLearning = [
+  {
+    id: 1,
+    title: 'Advanced React Patterns',
+  },
+  { id: 2, title: 'API Architecture' },
+  { id: 3, title: 'Performance Optimization' },
+  { id: 4, title: 'Shopify Custom Development' },
+  { id: 5, title: 'Modern Frontend Workflows' },
+]
+
+export const workProjects = [
+  {
+    id: 1,
+    title: 'Curozy — Medicine Reminder App',
+    description:
+      'A medicine reminder prototype that tracks medicine timing and reminder intervals with future plans for notification APIs and enhanced UI personalization.',
+    tags: ['ReactJS', 'Firebase', 'CSS'],
+    image: null,
+  },
+  {
+    id: 2,
+    title: 'Shopify Store Customization & Filtering',
+    description:
+      'Worked on product filtering, collection customization and UI enhancements to improve user experience and store performance.',
+    tags: ['Shopify', 'Liquid', 'JavaScript', 'CSS'],
+    image: null,
+  },
+  {
+    id: 3,
+    title: 'News App',
+    description:
+      'A news application that fetches real-time news using news API with category filtering and search functionality.',
+    tags: ['ReactJS', 'REST API', 'CSS'],
+    image: null,
+  },
+]
+
+export const experienceTimeline = [
+  {
+    id: 1,
+    role: 'Frontend Developer',
+    company: 'Current Company',
+    period: '2023 - Present',
+    details: 'Working on frontend applications using ReactJS, API integrations, UI development and Shopify customization.',
+  },
+  {
+    id: 2,
+    role: 'Junior Developer',
+    company: 'Early Projects & Learning',
+    period: '2021 - 2023',
+    details: 'Built multiple projects, explored APIs and improved skills in frontend development.',
+  },
+]
+
+export const beyondCode = [
+  { id: 1, title: 'Long Rides', desc: 'I love long solo rides that help me think and reset.' },
+  { id: 2, title: 'Music', desc: 'Music keeps me focused and motivated.' },
+  { id: 3, title: 'UI & Animations', desc: 'I enjoy creating smooth animations and interactive UI.' },
+  { id: 4, title: 'Always Learning', desc: 'I believe in learning every day and staying consistent.' },
+]
