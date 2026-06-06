@@ -22,7 +22,7 @@ const ContactPart = () => {
 
         {/* Email */}
         <a
-          href="mailto:arnab@gmail.com"
+          href="mailto:arnab2181@gmail.com"
           className="contact-card"
         >
           <div className="icon-wrapper">
@@ -31,13 +31,13 @@ const ContactPart = () => {
 
           <div>
             <h4>Email Me</h4>
-            <span>arnab@gmail.com</span>
+            <span>arnab2181@gmail.com</span>
           </div>
         </a>
 
         {/* LinkedIn */}
         <a
-          href="https://linkedin.com/in/arnabpaul"
+          href="https://www.linkedin.com/in/arnab-paul-09507022b/"
           target="_blank"
           rel="noreferrer"
           className="contact-card"
@@ -54,7 +54,7 @@ const ContactPart = () => {
 
         {/* GitHub */}
         <a
-          href="https://github.com/arnabpaul"
+          href="https://github.com/xscap"
           target="_blank"
           rel="noreferrer"
           className="contact-card"
@@ -65,7 +65,7 @@ const ContactPart = () => {
 
           <div>
             <h4>GitHub</h4>
-            <span>github.com/arnabpaul</span>
+            <span>github.com/xscap</span>
           </div>
         </a>
 

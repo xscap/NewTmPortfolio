@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-
+import { FaGithub,FaGlobe } from 'react-icons/fa'
 const Projects = ({ projects = [] }) => {
 	return (
 		<section className="projects-card">
@@ -19,7 +19,11 @@ const Projects = ({ projects = [] }) => {
 						</div>
 
 						<div className="project-body">
-							<h4>{p.title}</h4>
+							<h4>{p.title} </h4>
+							<div className="proj-icons">
+								<FaGithub size={18} color="#cbd5e1" style={{ marginLeft: '4px' }} />
+								<FaGlobe size={18} color="#cbd5e1" style={{ marginLeft: '10px' }} />	
+							</div>
 							<p className="muted">{p.description}</p>
 							<div className="tag-row">
 								{p.tags && p.tags.map((t, i) => (
