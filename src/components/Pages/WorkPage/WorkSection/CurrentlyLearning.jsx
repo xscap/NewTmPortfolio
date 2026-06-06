@@ -2,21 +2,19 @@
 
 const CurrentlyLearning = ({ list = [] }) => {
   return (
-    <>
+    <section className="panel panel-learning">
       <div className="panel-heading">
         <h3>Currently Learning</h3>
       </div>
-      <section className="panel">
-        <ul className="panel-list">
-          {list.map((item) => (
-            <li key={item.id} className="panel-item">
-              <span className="dot" />
-              <span>{item.title}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </>
+      <ul className="panel-list">
+        {list.map((item) => (
+          <li key={item.id} className="panel-item">
+            <span className="dot" />
+            <span>{item.title}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

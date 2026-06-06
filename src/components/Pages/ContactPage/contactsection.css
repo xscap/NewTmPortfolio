@@ -16,8 +16,10 @@
   border-radius: 32px;
   padding: 36px;
   display: grid;
-  grid-template-columns: minmax(320px, 1fr) minmax(420px, 1.2fr);
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  grid-auto-rows: auto;
   gap: 24px;
+  align-items: start;
 }
 
 .contact-heading {
@@ -25,6 +27,11 @@
   flex-direction: column;
   justify-content: center;
   gap: 18px;
+  grid-column: 1 / -1;
+}
+
+.resume-btn-contact {
+  grid-column: 1 / -1;
 }
 
 .contact-heading h2 {

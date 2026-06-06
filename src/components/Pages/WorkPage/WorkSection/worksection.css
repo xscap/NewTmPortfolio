@@ -150,16 +150,34 @@
 
 /* Generic panel used for left-column cards */
 .panel {
-  background: rgba(10,15,30,0.9);
-  border: 1px solid rgba(255,255,255,0.04);
-  border-radius: 14px;
-  padding: 18px;
+  background: linear-gradient(180deg, rgba(10, 16, 30, 0.98), rgba(8, 13, 28, 0.95));
+  border: 1px solid rgba(109, 119, 194, 0.18);
+  border-radius: 24px;
+  padding: 22px;
   color: #e6eef8;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(12px);
+}
+
+.panel-heading {
+  margin-bottom: 18px;
 }
 
 .panel-heading h3 {
-  margin: 0 0 12px 0;
-  color: #e6eef8;
+  margin: 0;
+  color: #f8fbff;
+  font-size: 1.14rem;
+  letter-spacing: 0.02em;
+}
+
+.panel-heading::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  margin-top: 14px;
+  background: linear-gradient(90deg, #7c5cff, #60a5fa);
 }
 
 .panel-list {
@@ -176,17 +194,22 @@
   align-items: center;
   gap: 12px;
   color: #cbd5e1;
+  padding: 10px 0;
+  font-size: 0.96rem;
 }
 
 .panel-item .dot {
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(135deg,#6366f1,#8b5cf6);
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   border-radius: 50%;
   display: inline-block;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.18);
 }
 
-.muted { color: #9fb0c9; }
+.muted {
+  color: #9fb0c9;
+}
 
 /* Projects */
 .projects-card { background: transparent; }
@@ -203,15 +226,19 @@
 /* Timeline */
 .timeline {
   display: grid;
-  gap: 18px;
+  gap: 16px;
 }
 .timeline-item {
-  display: grid;
-  grid-template-columns: minmax(160px, 220px) 1fr;
-  gap: 18px;
-  align-items: flex-start;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 18px 20px;
+  min-width: 0;
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+.timeline-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
 }
 .timeline-item:last-child {
   border-bottom: none;
@@ -219,7 +246,7 @@
 .timeline-left {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 .timeline-left strong {
   font-size: 1rem;
@@ -229,16 +256,16 @@
   color: #94a3b8;
 }
 .timeline-right {
-  display: flex;
-  align-items: flex-start;
+  min-width: 0;
 }
 .timeline-right p {
   margin: 0;
   color: #cbd5e1;
-  line-height: 1.8;
+  line-height: 1.75;
+  min-width: 0;
 }
 .small {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
 }
 
 /* Beyond code cards */
