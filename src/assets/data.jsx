@@ -1,5 +1,6 @@
 //These are mainly data sections works as a json
 import heroImg from "./heroimg.jpg";
+import Curozy from "./curozy.png"
 import {
   FaUser,
   FaCode,
@@ -135,7 +136,7 @@ export const workProjects = [
     description:
       'A medicine reminder prototype that tracks medicine timing and reminder intervals with future plans for notification APIs and enhanced UI personalization.',
     tags: ['ReactJS', 'Firebase', 'CSS'],
-    image: null,
+    image: Curozy,
   },
   {
     id: 2,
@@ -158,16 +159,16 @@ export const workProjects = [
 export const experienceTimeline = [
   {
     id: 1,
-    role: 'Frontend Developer',
-    company: 'Current Company',
-    period: '2023 - Present',
+    role: 'Associate Software Engineer',
+    company: 'Tech Mahindra',
+    period: 'Sep 2024 - Present',
     details: 'Working on frontend applications using ReactJS, API integrations, UI development and Shopify customization.',
   },
   {
     id: 2,
-    role: 'Junior Developer',
-    company: 'Early Projects & Learning',
-    period: '2021 - 2023',
+    role: 'Data Analyst Intern',
+    company: 'MedTourEasy',
+    period: 'Sep 2023 - Oct 2023',
     details: 'Built multiple projects, explored APIs and improved skills in frontend development.',
   },
 ]
