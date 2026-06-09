@@ -2,6 +2,7 @@ import React from "react";
 import "./heroabout.css";
 import { cardData } from "../../../../assets/data.jsx";
 
+
 const HeroAbout = () => {
   return (
     <section className="about-section" id="about-cards">
