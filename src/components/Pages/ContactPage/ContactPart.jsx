@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaDownload,
 } from "react-icons/fa";
+import CV from "../../../assets/ArnabPaul_CV.pdf"
 import "./contactsection.css";
 
 const ContactPart = () => {
@@ -71,7 +72,7 @@ const ContactPart = () => {
 
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
+          href={CV}
           download
           className="resume-btn-contact"
         >

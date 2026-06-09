@@ -1,6 +1,7 @@
 import React from "react";
 import "./herosection.css";
 import { heroData } from "../../../../assets/data";
+import CV from "../../../../assets/ArnabPaul_CV.pdf";
 import { MapPin, Download, Send, ArrowRight, } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -30,9 +31,9 @@ const HeroSectionViewer = () => {
             View My Work <ArrowRight size={18} />
           </Link>
 
-          <button className="secondary-btn">
+          <a href={CV} download="ArnabPaul_CV.pdf" className="secondary-btn">
             Download Resume <Download size={18} />
-          </button>
+          </a>
 
           <Link to="/contact" className="secondary-btn">
             Contact Me <Send size={18} />
